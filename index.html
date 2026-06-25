@@ -1,0 +1,202 @@
+<!DOCTYPE html><html lang="en"><head>
+  
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Fun Valentine's Day Game with HTML CSS and JavaScript</title>
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          background-color: #ffdde1;
+          font-family: 'Inter', sans-serif;
+          overflow: hidden;
+        }
+
+        .valentine-container {
+          text-align: center;
+          position: relative;
+          z-index: 10;
+        }
+
+        .gif-container img {
+          width: 250px;
+          height: 250px;
+          object-fit: cover;
+          border-radius: 20px;
+          margin-bottom: 20px;
+          box-shadow: 0 10px 30px rgba(255, 105, 135, 0.3);
+        }
+
+        h1 {
+          color: #ff4d6d;
+          font-size: 2.5rem;
+          margin-bottom: 40px;
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .btn-container {
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+          position: relative;
+        }
+
+        .btn {
+          padding: 15px 40px;
+          font-size: 1.5rem;
+          font-weight: 700;
+          border: none;
+          border-radius: 50px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .yes-btn {
+          background-color: #ff4d6d;
+          color: white;
+        }
+
+        .yes-btn:hover {
+          background-color: #c9184a;
+          transform: scale(1.1);
+        }
+
+        .no-btn {
+          background-color: #ffffff;
+          color: #ff4d6d;
+          position: relative;
+        }
+
+        .hidden {
+          display: none !important;
+        }
+    </style>
+
+            <meta name="description" content="A beautiful component imported via Developer Studio AI.">
+            <meta name="robots" content="index, follow">
+            <meta property="og:title" content="Create a Fun Valentine's Day Game with HTML CSS and JavaScript">
+            <meta property="og:description" content="A beautiful component imported via Developer Studio AI.">
+            <meta property="og:image" content="https://codescompiler.com/images/posts/valentine-fun-game.png">
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:title" content="Create a Fun Valentine's Day Game with HTML CSS and JavaScript">
+            <meta name="twitter:description" content="A beautiful component imported via Developer Studio AI.">
+            <meta name="twitter:image" content="https://codescompiler.com/images/posts/valentine-fun-game.png">
+          </head>
+<body>
+
+<!-- ── CODESCOMPILER DEMO HEADER ── -->
+<style>
+  #cc-demo-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 48px;
+    background: #1a1b26;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: white;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+  }
+  #cc-demo-header a { text-decoration: none; color: white; }
+  .cc-logo { font-size: 14px; font-weight: 900; }
+  .cc-logo span { color: #04aa6d; }
+  .cc-sep { width: 1px; height: 20px; background: rgba(255,255,255,0.12); margin: 0 12px; }
+  .cc-title { font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.65); flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .cc-actions { display: flex; gap: 8px; }
+  .cc-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    color: rgba(255,255,255,0.7);
+  }
+  .cc-btn:hover { background: rgba(255,255,255,0.15); color: white; }
+  .cc-btn svg { width: 14px; height: 14px; }
+  @media (max-width: 600px) {
+    .cc-title { display: none; }
+    .cc-btn span { display: none; }
+  }
+</style>
+<header id="cc-demo-header">
+  <div style="display: flex; align-items: center; overflow: hidden;">
+    <a href="https://codescompiler.com" class="cc-logo" target="_blank" rel="dofollow"><span>Codes</span>Compiler</a>
+    <div class="cc-sep"></div>
+    <h1 class="cc-title" title="Create a Fun Valentine's Day Game with HTML CSS and JavaScript" style="margin: 0; font-size: 13px; font-weight: 600;">📺 Create a Fun Valentine's Day Game with HTML CSS and JavaScript</h1>
+  </div>
+  <div class="cc-actions">
+    <a href="https://codescompiler.com/blog/valentine-fun-game" class="cc-btn" target="_blank" rel="dofollow" title="Read the full post">
+      <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+      <span>Back to Post</span>
+    </a>
+    <a href="index.html" class="cc-btn" target="_blank" download="valentine-fun-game.html" title="Download source file">
+      <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+      <span>Download</span>
+    </a>
+    <button onclick="document.getElementById('cc-demo-header').style.display='none'" class="cc-btn" title="Hide header for fullscreen view">
+      <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l5-5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg>
+      <span>Fullscreen</span>
+    </button>
+  </div>
+</header>
+<!-- ================================== -->
+
+    <div class="valentine-container">
+      <div class="gif-container">
+        <img id="bear-gif" src="https://media.tenor.com/ef3X8834_E0AAAAi/tkthao219-bubududu.gif" alt="Cute Bear">
+      </div>
+      <h1 id="question">Will you be my Valentine? 🥺</h1>
+      
+      <div class="btn-container">
+        <button id="yes-btn" class="btn yes-btn">Yes</button>
+        <button id="no-btn" class="btn no-btn">No</button>
+      </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const noBtn = document.getElementById('no-btn');
+            const yesBtn = document.getElementById('yes-btn');
+            const question = document.getElementById('question');
+            const bearGif = document.getElementById('bear-gif');
+            const btnContainer = document.querySelector('.btn-container');
+
+            noBtn.addEventListener('mouseover', () => {
+                const x = Math.floor(Math.random() * (window.innerWidth - noBtn.offsetWidth));
+                const y = Math.floor(Math.random() * (window.innerHeight - noBtn.offsetHeight));
+                
+                noBtn.style.position = 'fixed';
+                noBtn.style.left = `${x}px`;
+                noBtn.style.top = `${y}px`;
+            });
+
+            yesBtn.addEventListener('click', () => {
+                question.innerHTML = "Yaaay! I love you! ❤️✨";
+                bearGif.src = "https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif";
+                
+                btnContainer.classList.add('hidden');
+                noBtn.classList.add('hidden');
+            });
+        });
+    </script>
+
+
+</body></html>
